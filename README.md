@@ -17,5 +17,6 @@ Pendant ce tp, on devait refaire une api pour un site de revente automobile.
 ## Objectif de Sécurité
 
 ## Surface d'attaque
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbkEoRG9ja2VyKSAtLT4gQihTcHJpbmctYm9vdClcbkIgLS0-IEMocmVxdcOqdGVzIEh0dHApXG5CIC0tPiBEKEJhc2UgZGUgZG9ubsOpZSlcbkMgLS0-IEVbR2V0XVxuQyAtLT4gRltQb3N0XVxuQyAtLT4gR1tQdXRdXG5DIC0tPiBIW0RlbGV0ZV1cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkEoRG9ja2VyKSAtLT4gQihTcHJpbmctYm9vdClcbkIgLS0-IEMocmVxdcOqdGVzIEh0dHApXG5CIC0tPiBEKEJhc2UgZGUgZG9ubsOpZSlcbkMgLS0-IEVbR2V0XVxuQyAtLT4gRltQb3N0XVxuQyAtLT4gR1tQdXRdXG5DIC0tPiBIW0RlbGV0ZV1cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
 ## Analyse de sécurité
