@@ -9,6 +9,17 @@ J'avais realise le projet avec Skiadram (Neel-Léo COFFIN).
 Pendant ce tp, on devait refaire une api pour un site de revente automobile.
 
 ## Docker
+Pour lancer le projet :
+>cd prog-composant-voitures-main
+>mvn clean install
+>mvn spring-boot:run
+
+Pour creer son image sur Docker et lancer:
+>cd prog-composant-voitures-main
+>mvn clean install
+>docker build -t prog-composant-voitures-main .
+>docker run -d -p 8080:8080 prog-composant-voitures-main
+Puis aller sur http://localhost:8080/
 
 ## Tests
 
