@@ -1,11 +1,13 @@
 package com.example.demo.services.adresseService;
 
 import com.example.demo.entity.AdresseEntity;
-import org.springframework.data.domain.Slice;
 
 import java.util.List;
 import java.util.Optional;
 
+/*
+Interface Service qui va effectuer les requetes des Controller, ici pour la table Adresse
+*/
 public interface AdresseService {
 
     public Iterable<AdresseEntity>getAllAdresse();

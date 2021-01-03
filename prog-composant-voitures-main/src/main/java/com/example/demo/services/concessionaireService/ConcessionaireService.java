@@ -4,6 +4,9 @@ import com.example.demo.entity.ConcessionaireEntity;
 
 import java.util.Optional;
 
+/*
+Interface Service qui va effectuer les requetes des Controller, ici pour la table Concessionaire
+*/
 public interface ConcessionaireService {
 
     public Iterable<ConcessionaireEntity>getAllConcessionaire();

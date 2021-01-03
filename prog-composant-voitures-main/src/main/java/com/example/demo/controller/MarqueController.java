@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.AdresseEntity;
 import com.example.demo.entity.MarqueEntity;
 import com.example.demo.exception.RessourceNotFoundException;
 import com.example.demo.services.marqueService.MarqueService;
@@ -11,6 +10,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+/*
+Classe Controller avec laquel l'utilisateur va interagir avec la table Marque
+*/
 @RestController
 @RequestMapping(path = "/api")
 public class MarqueController {

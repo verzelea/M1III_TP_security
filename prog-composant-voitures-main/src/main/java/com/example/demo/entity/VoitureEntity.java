@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*
+Classe qui représente les voitures en base de donnée
+*/
 @Entity
 @Table(name = "voiture")
 @Data

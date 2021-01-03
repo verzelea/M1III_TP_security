@@ -9,6 +9,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+Classe qui représente les clients en base de donnée
+*/
 @NoArgsConstructor
 @Entity
 @Data
@@ -17,6 +20,10 @@ public class ClientEntity{
     @Id
     private int id_client;
     private String nom;
+
+    /*
+    relation OneToMany avec la table Voiture
+    */
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "id_client", referencedColumnName = "id_client", updatable = false, insertable = false)

@@ -1,16 +1,16 @@
 package com.example.demo.services.clientService;
 
 import com.example.demo.entity.ClientEntity;
-import com.example.demo.entity.ConcessionaireEntity;
 import com.example.demo.repository.ClientRepository;
-import com.example.demo.repository.ConcessionaireRepository;
-import com.example.demo.services.concessionaireService.ConcessionaireService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+/*
+Classe Service qui implemente l'Interface Service de la table Client
+*/
 @Repository
 @Transactional(readOnly = true)
 public class ClientServiceImplement implements ClientService {

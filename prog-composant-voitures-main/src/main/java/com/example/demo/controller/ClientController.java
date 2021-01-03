@@ -1,12 +1,8 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.AdresseEntity;
 import com.example.demo.entity.ClientEntity;
-import com.example.demo.entity.VoitureEntity;
 import com.example.demo.exception.RessourceNotFoundException;
 import com.example.demo.services.clientService.ClientService;
-import com.example.demo.services.voitureService.VoitureService;
-import com.example.demo.services.voitureService.VoitureServiceImplement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +10,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+/*
+Classe Controller avec laquel l'utilisateur va interagir avec la table Client
+*/
 @RestController
 @RequestMapping(path = "/api")
 public class ClientController {

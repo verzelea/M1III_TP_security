@@ -3,8 +3,10 @@ package com.example.demo.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
+/*
+Classe qui représente les adresses en base de donnée
+*/
 @Entity
 @Data
 @Table(name = "adresse")

@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.AdresseEntity;
 import com.example.demo.entity.ConcessionaireEntity;
 import com.example.demo.exception.RessourceNotFoundException;
 import com.example.demo.services.concessionaireService.ConcessionaireService;
@@ -11,6 +10,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+/*
+Classe Controller avec laquel l'utilisateur va interagir avec la table Concessionaire
+*/
 @RestController
 @RequestMapping(path = "/api")
 public class ConcessionaireController {

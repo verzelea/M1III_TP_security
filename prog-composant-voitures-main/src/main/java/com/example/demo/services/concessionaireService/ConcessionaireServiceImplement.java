@@ -8,6 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+/*
+Classe Service qui implemente l'Interface Service de la table Concessionaires
+*/
 @Repository
 @Transactional(readOnly = true)
 public class ConcessionaireServiceImplement implements ConcessionaireService {

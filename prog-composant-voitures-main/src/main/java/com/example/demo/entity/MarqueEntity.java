@@ -8,6 +8,10 @@ import org.hibernate.annotations.OnDeleteAction;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+
+/*
+Classe qui représente les marques en base de donnée
+*/
 @Data
 @Entity
 @Table(name = "marque")
@@ -17,11 +21,17 @@ public class MarqueEntity {
     private int id_marque;
     private String nom;
 
+    /*
+    relation OneToMany avec la table Voiture
+    */
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "id_marque", referencedColumnName = "id_marque", updatable = false, insertable = false)
     private Set<VoitureEntity> listVoiture = new HashSet<VoitureEntity>();
 
+    /*
+    relation ManyToMany avec la table Concessionaire
+    */
     @JsonIgnore
     @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToMany(mappedBy = "marques")

@@ -8,10 +8,12 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+Classe qui représente les concessionaires en base de donnée
+*/
 @Data
 @EqualsAndHashCode(exclude = "marques")
 @NoArgsConstructor
@@ -22,11 +24,17 @@ public class ConcessionaireEntity{
     private int id_concessionaire;
     private String nom;
 
+    /*
+    relation OneToMany avec la table Adresse
+    */
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "id_concessionaire", referencedColumnName = "id_concessionaire", updatable = false, insertable = false)
     private Set<AdresseEntity> listAdresses = new HashSet<AdresseEntity>();
 
+    /*
+    relation ManyToMany avec la table Marque
+    */
     @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
     @OnDelete(action = OnDeleteAction.CASCADE)

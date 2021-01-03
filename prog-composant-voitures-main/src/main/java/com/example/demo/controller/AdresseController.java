@@ -4,9 +4,6 @@ import com.example.demo.entity.AdresseEntity;
 import com.example.demo.exception.RessourceNotFoundException;
 import com.example.demo.services.adresseService.AdresseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.rest.webmvc.ResourceNotFoundException;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -14,7 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-
+/*
+Classe Controller avec laquel l'utilisateur va interagir avec la table Adresse
+*/
 @RestController
 @RequestMapping(path = "/api")
 public class AdresseController {
@@ -23,8 +22,8 @@ public class AdresseController {
     AdresseService adresseService;
 
     /*
-    Another method with @RequestParam (replace get All method) -> I didn't create this features for the other controllers
-    in order to keep them very simple
+    Une autre méthode avec @RequestParam (remplacer la méthode get All) -> 
+    Je n'ai pas créé cette fonctionnalité pour les autres contrôleurs afin de les garder très simples
      */
     @GetMapping("/adresse")
     public Iterable<AdresseEntity> getAllAdresseParam(@RequestParam(value = "id_adresse", required = false) List<String> id_adresse,

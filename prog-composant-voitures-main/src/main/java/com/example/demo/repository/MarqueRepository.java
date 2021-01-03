@@ -7,6 +7,9 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
+/*
+Class Repository pour faire les requetes SQL pour la table Marque
+*/
 @RepositoryRestResource(path="marque")
 public interface MarqueRepository extends JpaRepository <MarqueEntity, Integer>{
 
